@@ -403,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
   <ul class="collapse">
-  <li><a href="#project-folder-structure-and-function-explanation" id="toc-project-folder-structure-and-function-explanation" class="nav-link" data-scroll-target="#project-folder-structure-and-function-explanation"><span class="header-section-number">1.1</span> Project Folder Structure and Function Explanation</a>
+  <li><a href="#project-folder-structure-and-function-description" id="toc-project-folder-structure-and-function-description" class="nav-link" data-scroll-target="#project-folder-structure-and-function-description"><span class="header-section-number">1.1</span> Project Folder Structure and Function Description</a>
   <ul class="collapse">
   <li><a href="#additional-notes" id="toc-additional-notes" class="nav-link" data-scroll-target="#additional-notes"><span class="header-section-number">1.1.1</span> Additional Notes</a></li>
   </ul></li>
@@ -477,11 +477,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#faq" id="toc-faq" class="nav-link" data-scroll-target="#faq"><span class="header-section-number">6</span> FAQ</a>
   <ul class="collapse">
-  <li><a href="#why-isnt-my-translation-taking-effect" id="toc-why-isnt-my-translation-taking-effect" class="nav-link" data-scroll-target="#why-isnt-my-translation-taking-effect"><span class="header-section-number">6.1</span> Why isn’t my translation taking effect?</a></li>
+  <li><a href="#why-isnt-my-translation-working" id="toc-why-isnt-my-translation-working" class="nav-link" data-scroll-target="#why-isnt-my-translation-working"><span class="header-section-number">6.1</span> Why isn’t my translation working?</a></li>
   <li><a href="#getting-a-404-error-after-deployment" id="toc-getting-a-404-error-after-deployment" class="nav-link" data-scroll-target="#getting-a-404-error-after-deployment"><span class="header-section-number">6.2</span> Getting a 404 error after deployment?</a></li>
-  <li><a href="#i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature.-what-should-i-do" id="toc-i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature.-what-should-i-do" class="nav-link" data-scroll-target="#i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature.-what-should-i-do"><span class="header-section-number">6.3</span> I only want to use a single language (e.g., only Chinese) and don’t want the bilingual feature. What should I do?</a></li>
+  <li><a href="#what-if-i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature" id="toc-what-if-i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature" class="nav-link" data-scroll-target="#what-if-i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature"><span class="header-section-number">6.3</span> What if I only want to use a single language (e.g., only Chinese) and don’t want the bilingual feature?</a></li>
   </ul></li>
-  <li><a href="#additional-tool-automatically-convert-latex-to-quarto-markdown" id="toc-additional-tool-automatically-convert-latex-to-quarto-markdown" class="nav-link" data-scroll-target="#additional-tool-automatically-convert-latex-to-quarto-markdown"><span class="header-section-number">7</span> Additional Tool: Automatically Convert LaTeX to Quarto Markdown</a></li>
+  <li><a href="#additional-tool-automatic-latex-to-quarto-markdown-conversion" id="toc-additional-tool-automatic-latex-to-quarto-markdown-conversion" class="nav-link" data-scroll-target="#additional-tool-automatic-latex-to-quarto-markdown-conversion"><span class="header-section-number">7</span> Additional Tool: Automatic LaTeX to Quarto Markdown Conversion</a></li>
   </ul>
 </nav>
     </div>
@@ -536,12 +536,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Easy to Get Started</strong>: Just follow this tutorial and use modern AI tools for troubleshooting. No prior knowledge is required to easily complete website deployment.</li>
 <li><strong>Academic-Friendly</strong>: Supports LaTeX-style mathematical formulas, formula citations, and bibliography management, suitable for publishing academic content.</li>
 <li><strong>Lightweight and Clean</strong>: Primarily uses Quarto’s native features, minimizing custom CSS/HTML for easier understanding and secondary development.</li>
-<li><strong>AI Auto-Translation</strong>: Includes a built-in Python script that utilizes the DeepSeek API to achieve automatic synchronization of Chinese and English content.</li>
-<li><strong>Automated Deployment</strong>: Integrated with GitHub Actions for automatic, free building and publishing. No manual operations or personal server configuration is needed.</li>
+<li><strong>AI Auto-Translation</strong>: Includes a built-in Python script that uses the DeepSeek API to achieve automatic synchronization of Chinese and English content.</li>
+<li><strong>Automated Deployment</strong>: Integrated with GitHub Actions for automatic, free building and publishing. No manual operations or personal server configuration required.</li>
 <li><strong>Responsive Design</strong>: Clean and aesthetically pleasing interface, adapted for both desktop and mobile devices.</li>
 </ul>
-<section id="project-folder-structure-and-function-explanation" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="project-folder-structure-and-function-explanation"><span class="header-section-number">1.1</span> Project Folder Structure and Function Explanation</h2>
+<section id="project-folder-structure-and-function-description" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="project-folder-structure-and-function-description"><span class="header-section-number">1.1</span> Project Folder Structure and Function Description</h2>
 <p>Before starting the configuration, we need to understand the project’s folder structure and the functions of each part to facilitate understanding of subsequent operations.</p>
 <pre><code>username.github.io/              # Your personal website project root directory
 ├─ _quarto.yml                   # Quarto website global configuration file
@@ -553,7 +553,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ├─ .github/                      # GitHub configuration folder
 │  └─ workflows/
 │     └─ publish.yml             # GitHub Actions automation workflow, see details later
-├─ content/                      # Main content folder, where you usually need to edit
+├─ content/                      # Main content folder, where you will do most of your editing
 │  ├─ en/                        # English content
 │  │  ├─ _metadata.yml           # English folder metadata
 │  │  ├─ index.qmd               # English homepage (if the source language is Chinese, this file is automatically generated by the translation script)
@@ -585,7 +585,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="additional-notes" class="level3" data-number="1.1.1">
 <h3 data-number="1.1.1" class="anchored" data-anchor-id="additional-notes"><span class="header-section-number">1.1.1</span> Additional Notes</h3>
 <ul>
-<li><p><strong>Root directory <code>index.qmd</code></strong>: The source file for the website’s homepage. It is written in Chinese by default (<code>lang: zh</code>). The translation script will automatically generate the English version to <code>content/en/index.qmd</code>. If you prefer writing in English, you can change the <code>lang</code> to <code>en</code>, and the script will generate the Chinese version to <code>content/zh/index.qmd</code>.</p></li>
+<li><p><strong>Root directory <code>index.qmd</code></strong>: The source file for the website’s homepage. It is written in Chinese by default (<code>lang: zh</code>). The translation script will automatically generate the English version to <code>content/en/index.qmd</code>. If you prefer writing in English, you can change the <code>lang</code> to <code>en</code>, and the script will generate the Chinese version to <code>content/zh/index.qmd</code> in reverse.</p></li>
 <li><p><strong><code>_metadata.yml</code></strong>: Can be placed in any content subfolder (e.g., <code>blog/</code>, <code>notes/</code>) to define default metadata for all documents within that folder. See the later section “Configuration Hierarchy and Priority” for details.</p></li>
 <li><p><strong><code>_site/</code></strong>: The static website generated by Quarto after building. <strong>Do not edit manually</strong>.</p></li>
 </ul>
@@ -594,8 +594,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="preparation" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Preparation</h1>
-<p>This tutorial assumes you already have a GitHub account. If you don’t, please visit the <a href="https://github.com/">GitHub website</a> to register for one. GitHub is the world’s largest code hosting platform, supporting version control, collaborative development, and automated deployment. You will use it to store your website’s source code, manage its history, and implement automated building and publishing via GitHub Actions.</p>
-<p>If you are a student from a non-computer science background, you might be unfamiliar with the following tools. Don’t worry, these tools are well worth learning, and the time invested will not be wasted.</p>
+<p>This tutorial assumes you already have a GitHub account. If you don’t, please visit the <a href="https://github.com/">GitHub website</a> to register for one. GitHub is the world’s largest code hosting platform, supporting version control, collaborative development, and automated deployment. You will use it to store your website source code, manage history, and implement automated building and publishing via GitHub Actions.</p>
+<p>If you are a student from a non-computer science background, you might find the following tools unfamiliar. Don’t worry, these tools are well worth learning, and the time invested will not be wasted.</p>
 <blockquote class="blockquote">
 <p><strong>Suggestion</strong>: When you encounter unfamiliar terms (e.g., “git commit”, “pull request”), ask an AI directly (like ChatGPT or DeepSeek). For example: <em>“I am a non-computer science student. Please explain in simple terms what Git is and how to use it in VS Code?”</em></p>
 </blockquote>
@@ -611,41 +611,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong><a href="https://git-scm.com/downloads">Git</a></strong>: A version control tool used to synchronize changes to GitHub.</p></li>
 <li><p><strong><a href="https://www.python.org/downloads/">Python</a></strong> (Optional): Used to run the translation script locally. Please check “Add Python to PATH” during installation.</p></li>
 </ul>
-<p>Please search for installation and configuration guides for the relevant tools yourself; they will not be covered in detail here.</p>
+<p>Please search for the installation and configuration of the relevant tools yourself; they will not be detailed here.</p>
 <section id="about-vs-code" class="level3" data-number="2.1.1">
 <h3 data-number="2.1.1" class="anchored" data-anchor-id="about-vs-code"><span class="header-section-number">2.1.1</span> About VS Code</h3>
-<p>VS Code is essentially a text editor, but it has a rich <strong>plugin ecosystem</strong>—these plugins enable VS Code to “understand” various languages (syntax highlighting, error checking, auto-completion) or “transform” into various tools (Git client, Quarto editor, etc.). It is referred to as an “Integrated Development Environment” (IDE).</p>
-<p>However, VS Code and its plugins are only responsible for <strong>editing</strong>; the actual <strong>execution</strong> of code is handled by <strong>external tools</strong> installed on your computer (e.g., Python interpreter, TeX compiler).</p>
-<p>For example: To write Python in VS Code, you need to install both: - <strong>Python plugin</strong>: Makes the editor recognize <code>.py</code> files and provides intelligent suggestions. - <strong>Python interpreter</strong>: The program that actually runs the code.</p>
-<p>This tutorial focuses on Quarto website configuration. Detailed usage of the above tools is too lengthy to cover here. If needed, it is recommended to search on your own or ask an AI. Considering the importance of Git for this project’s configuration and that students from non-computer science backgrounds might be less familiar with it, its value and learning suggestions will be briefly introduced below.</p>
+<p>VS Code is essentially a text editor, but it has a rich <strong>plugin ecosystem</strong>—these plugins enable VS Code to “understand” various languages (syntax highlighting, error checking, auto-completion) or “transform” into various tools (Git client, Quarto editor, etc.). It is called an “Integrated Development Environment” (IDE).</p>
+<p>However, VS Code and its plugins are only responsible for <strong>editing</strong>. The <strong>execution</strong> of code is handled by <strong>external tools</strong> installed on your computer (e.g., Python interpreter, TeX compiler).</p>
+<p>For example: To write Python in VS Code, you need to install both:</p>
+<ul>
+<li><strong>Python plugin</strong>: Makes the editor recognize <code>.py</code> files and provides intelligent suggestions.</li>
+<li><strong>Python interpreter</strong>: The program that actually runs the code.</li>
+</ul>
+<p>This tutorial focuses on Quarto website configuration. The detailed usage of the aforementioned tools is too lengthy to be covered here. If needed, it is recommended to search on your own or ask an AI. Considering the important role of Git in this project’s configuration and that students from non-computer science backgrounds might be less familiar with it, the following section will briefly introduce its value and learning suggestions.</p>
 </section>
 <section id="about-git-and-github-a-skill-worth-investing-in" class="level3" data-number="2.1.2">
 <h3 data-number="2.1.2" class="anchored" data-anchor-id="about-git-and-github-a-skill-worth-investing-in"><span class="header-section-number">2.1.2</span> About Git and GitHub: A Skill Worth Investing In</h3>
 <p>The main point here is to emphasize: <strong>Git is a skill very much worth learning</strong>.</p>
-<p><strong>What is the relationship between Git and GitHub?</strong> - <strong>Git</strong>: A version control tool installed on your computer, responsible for recording the history of every change to your files. - <strong>GitHub</strong>: A cloud-based code hosting platform that can synchronize your local Git repository online, enabling backup, collaboration, and automated deployment.</p>
-<p>Simply put: Git manages local history, GitHub handles cloud synchronization. Used together, your code has a complete version history and cloud backup.</p>
-<p><strong>Why is it worth learning?</strong> - <strong>Version History</strong>: Every “commit” saves a snapshot, allowing you to revert to any past version at any time. - <strong>Cloud Backup</strong>: Once pushed to GitHub, your code won’t be lost even if your computer breaks. - <strong>Multi-device Synchronization</strong>: Push from your lab computer, pull at your dorm, and continue seamlessly. - <strong>Collaboration and Automation</strong>: GitHub supports multi-person collaboration and automated builds (like the automatic translation and deployment in this project).</p>
+<p><strong>What is the relationship between Git and GitHub?</strong></p>
+<ul>
+<li><strong>Git</strong>: A version control tool installed on your computer, responsible for recording every change history of files.</li>
+<li><strong>GitHub</strong>: A cloud-based code hosting platform that can synchronize your local Git repository online, enabling backup, collaboration, and automated deployment.</li>
+</ul>
+<p>Simply put: Git manages local history, GitHub handles cloud synchronization. Used together, your code has both a complete version history and cloud backup.</p>
+<p><strong>Why is it worth learning?</strong></p>
+<ul>
+<li><strong>Version History</strong>: Every “commit” saves a snapshot, allowing you to revert to any past version at any time.</li>
+<li><strong>Cloud Backup</strong>: After pushing to GitHub, your code won’t be lost even if your computer breaks.</li>
+<li><strong>Multi-device Synchronization</strong>: Push from your lab computer, pull at your dorm, and continue seamlessly.</li>
+<li><strong>Collaboration and Automation</strong>: GitHub supports multi-person collaboration and automated builds (like the automatic translation and deployment in this project).</li>
+</ul>
 <p><strong>Good News: VS Code Makes Git Simple</strong></p>
 <p>You <strong>do not</strong> need to remember complex command lines. VS Code has a built-in graphical Git interface—the “Source Control” panel in the left sidebar can handle <strong>90% of daily operations</strong>: viewing changes, committing, pushing, pulling, all achievable with just a few clicks.</p>
-<p><strong>Learning Suggestions</strong>: - When you encounter an unfamiliar concept, ask an AI directly: “<em>Please explain in simple terms what a Git commit means?</em>” - Search for tutorial videos or articles to learn the basic workflow.</p>
+<p><strong>Learning Suggestions</strong>:</p>
+<ul>
+<li>When you encounter an unfamiliar concept, ask an AI directly: “<em>Please explain in simple terms what a Git commit means?</em>”</li>
+<li>Search for tutorial videos or articles to learn the basic operational workflow.</li>
+</ul>
 <blockquote class="blockquote">
-<p>Git and GitHub are foundational infrastructure for modern research. Whether you will be writing code, performing data analysis, or managing lab records in the future, this skill will benefit you for life. Investing a few hours to learn it yields long-term efficiency gains. VS Code is also worth the investment, as it can significantly improve your writing and programming efficiency.</p>
+<p>Git and GitHub are foundational infrastructure in modern research. Whether you will be writing code, performing data analysis, or managing lab records in the future, this skill will benefit you for life. Investing a few hours to learn it yields long-term efficiency gains. VS Code is also worth the investment, as it can greatly enhance your writing and programming efficiency.</p>
 </blockquote>
 </section>
 </section>
 <section id="recommended-extensions" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="recommended-extensions"><span class="header-section-number">2.2</span> Recommended Extensions</h2>
-<p>Open the Extensions store on the left sidebar of VS Code, search for and install:</p>
+<p>Open the Extensions panel in the left sidebar of VS Code, search for and install:</p>
 <ul>
-<li><strong>Quarto</strong>: Provides syntax highlighting and live preview for <code>.qmd</code> files (the file format for web articles in this project). Essential for this project.</li>
-<li><strong>GitHub Copilot</strong> (Recommended): AI programming assistant, free with educational verification. Can significantly improve coding and documentation writing efficiency.</li>
+<li><strong>Quarto</strong>: Provides syntax highlighting and live preview for <code>.qmd</code> files (the file format for the web articles in this project). Essential for this project.</li>
+<li><strong>GitHub Copilot</strong> (Recommended): An AI programming assistant, available for free with educational verification. Can significantly improve efficiency in writing code and documentation.</li>
 </ul>
 </section>
 <section id="verify-installation" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="verify-installation"><span class="header-section-number">2.3</span> Verify Installation</h2>
 <p>After ensuring the above tools are installed, please verify that Quarto is correctly installed. Open VS Code, select <strong>Terminal -&gt; New Terminal</strong> from the top menu bar, enter the following command, and press Enter:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If a version number is displayed (e.g., <code>1.8.xx</code>), the installation is successful.</p>
+<p>If a version number (e.g., <code>1.8.xx</code>) is displayed, the installation is successful.</p>
 </section>
 </section>
 <section id="configuration-steps" class="level1" data-number="3">
@@ -654,7 +672,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="3.1" class="anchored" data-anchor-id="fork-the-project"><span class="header-section-number">3.1</span> Fork the Project</h2>
 <p>First, you need to Fork this project template to your own GitHub account:</p>
 <ol type="1">
-<li>Open <a href="https://github.com/perryopytixz/perryopytixz.github.io">this project’s GitHub page</a>.</li>
+<li>Open <a href="https://github.com/perryopytixz/perryopytixz.github.io">the GitHub page of this project</a>.</li>
 <li>Click the <strong>Fork</strong> button in the top right corner.</li>
 <li><strong>Important</strong>: Change the repository name to <code>your-username.github.io</code> (e.g., <code>zhangsan.github.io</code>). This is necessary to enable the default GitHub Pages domain.</li>
 <li><strong>(Recommended)</strong> <strong>Uncheck “Copy the main branch only”</strong> to copy the <code>gh-pages</code> branch (if it exists in the template repository).</li>
@@ -670,7 +688,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 data-number="3.2" class="anchored" data-anchor-id="configure-ai-translation-deepseek"><span class="header-section-number">3.2</span> Configure AI Translation (DeepSeek)</h2>
 <p>This template uses the DeepSeek API for automatic translation. You need to configure an API Key to use this feature.</p>
 <ol type="1">
-<li><strong>Obtain Key</strong>: Go to the <a href="https://platform.deepseek.com/">DeepSeek Platform</a> to register and apply for an API Key (format: <code>sk-xxxxx</code>). New users typically have free credits.</li>
+<li><strong>Obtain a Key</strong>: Go to the <a href="https://platform.deepseek.com/">DeepSeek Platform</a>, register, and apply for an API Key (format: <code>sk-xxxxx</code>). New users typically have free credits.</li>
 <li><strong>Configure GitHub Secrets</strong>:</li>
 </ol>
 <ul>
@@ -683,17 +701,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="key-initialization-steps" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="key-initialization-steps"><span class="header-section-number">3.3</span> Key Initialization Steps</h2>
-<p><strong>Before performing the first push, you must complete the following initialization configuration.</strong> Otherwise, the automation scripts may fail with errors.</p>
+<p>Before performing the first push, <strong>you must complete the following initialization configuration</strong>; otherwise, the automation scripts may fail with errors.</p>
 <blockquote class="blockquote">
-<p><strong>Important Note</strong>: All the following commands must be run in the <strong>project’s root directory</strong>. If you have opened this project’s folder in VS Code, simply open the terminal (Terminal -&gt; New Terminal); it will default to the project root directory.</p>
+<p><strong>Important Note</strong>: All the following commands must be run in <strong>the project’s root directory</strong>. If you have opened this project’s folder in VS Code, simply open a terminal (Terminal -&gt; New Terminal) – it will be in the project root by default.</p>
 </blockquote>
 <section id="ensure-complete-directory-structure" class="level3" data-number="3.3.1">
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="ensure-complete-directory-structure"><span class="header-section-number">3.3.1</span> Ensure Complete Directory Structure</h3>
 <p>Git has a characteristic: <strong>it does not track empty folders</strong>.</p>
 <p>This means that if you create a new folder but haven’t placed any files in it, or if you delete all files from a folder, that folder will <strong>disappear</strong> when pushed to GitHub.</p>
-<p>This can cause automation scripts (like the translation script) to fail with errors when running in the cloud because they cannot find the expected directory structure (e.g., <code>content/en</code>).</p>
-<p>If you forked this project directly without deleting any files, then it should be fine, and you can skip this step.</p>
-<p><strong>Solution</strong>: Please ensure that the <code>content/zh</code> and <code>content/en</code> directories and their subdirectories (e.g., <code>blog</code>, <code>notes</code>) in this project contain at least one file. If they are empty, manually create an empty file named <code>.gitkeep</code> as a placeholder. You can use command-line operations:</p>
+<p>This can cause automation scripts (such as the translation script) to fail with errors when running in the cloud because they cannot find the expected directory structure (e.g., <code>content/en</code>).</p>
+<p>If you forked this project directly without deleting any files, then this should not be an issue, and you can skip this step.</p>
+<p><strong>Solution</strong>: Please ensure that the <code>content/zh</code> and <code>content/en</code> directories and their subdirectories (e.g., <code>blog</code>, <code>notes</code>) in this project contain at least one file. If any of them are empty, manually create an empty file named <code>.gitkeep</code> as a placeholder. You can use command-line operations:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># macOS / Linux / Git Bash:</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> content/en/.gitkeep</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -703,7 +721,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="initialize-the-publishing-branch-gh-pages" class="level3" data-number="3.3.2">
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="initialize-the-publishing-branch-gh-pages"><span class="header-section-number">3.3.2</span> Initialize the Publishing Branch (gh-pages)</h3>
 <p>The project’s automation scripts will push the compiled HTML webpage files to the <code>gh-pages</code> branch. <strong>If this branch does not exist, the first deployment will fail</strong>.</p>
-<p>Please run the following commands in the terminal to check and create it:</p>
+<p>Please run the following commands in your terminal to check and create it:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Check if the gh-pages branch already exists</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-a</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -719,13 +737,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Create an empty commit</span></span>
 <span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">--allow-empty</span> <span class="at">-m</span> <span class="st">"Initial gh-pages"</span></span>
 <span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Push to remote</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Push to the remote repository</span></span>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin gh-pages</span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Switch back to the main branch</span></span>
 <span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote class="blockquote">
-<p><strong>Tip</strong>: After executing step 3, the file list on the left side of VS Code will momentarily clear—this is normal. You have simply switched to an empty branch. After executing step 6 to switch back to <code>main</code>, all files will be restored.</p>
+<p><strong>Tip</strong>: After executing step 3, the file list on the left side of VS Code will momentarily become empty—this is normal. You have simply switched to an empty branch. After executing step 6 to switch back to <code>main</code>, all files will reappear.</p>
 </blockquote>
 </section>
 <section id="enable-github-permissions" class="level3" data-number="3.3.3">
@@ -752,13 +770,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 <p>After configuration, wait a few minutes, and your website will be accessible at <code>https://your-username.github.io</code>! 🎉</p>
 <blockquote class="blockquote">
-<p><strong>Note</strong>: If the website does not display properly, you can check the deployment status under the <strong>Actions</strong> tab in your GitHub repository. Click on the most recent run record. If there is a red cross, click into it to view the specific error message and troubleshoot accordingly.</p>
+<p><strong>Note</strong>: If the website does not display normally, you can go to the <strong>Actions</strong> tab of your GitHub repository to check the deployment status. Click on the most recent run record. If there is a red cross, click into it to view specific error messages and troubleshoot accordingly.</p>
 </blockquote>
 </section>
 </section>
 <section id="configure-the-comment-system-giscus-optional" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="configure-the-comment-system-giscus-optional"><span class="header-section-number">3.4</span> Configure the Comment System Giscus (Optional)</h2>
-<p>This template integrates the Giscus comment system. <strong>If you do not need comment functionality, please disable it following the tutorial below and skip this step directly</strong>.</p>
+<p>This template integrates the Giscus comment system. <strong>If you do not need comment functionality, please disable it following the tutorial below and skip this step</strong>.</p>
 <blockquote class="blockquote">
 <p><strong>How to completely disable comments?</strong> Open the <code>_quarto.yml</code> file, find the <code>comments</code> section, and delete or comment out that part of the code.</p>
 </blockquote>
@@ -796,7 +814,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">category-id</span><span class="kw">:</span><span class="at"> DIC_kwDO...</span><span class="co">           # Fill in data-category-id</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><strong>Personalize Settings</strong>:
 <ul>
-<li>If you want to disable comments on certain pages (e.g., the homepage), simply add <code>comments: false</code> to the YAML frontmatter of that page.</li>
+<li>If you want to disable comments on certain pages (e.g., the homepage), simply add <code>comments: false</code> to the top YAML of that page.</li>
 </ul></li>
 </ol>
 </section>
@@ -841,10 +859,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="advanced-principles" class="level1" data-number="4">
 <h1 data-number="4"><span class="header-section-number">4</span> Advanced Principles</h1>
-<p>If you are interested in the principles behind the website or want to perform deep customization, please read the <a href="https://quarto.org/docs/websites/">official documentation</a>. This chapter provides some targeted explanations, which are best read in conjunction with the project directory structure.</p>
+<p>If you are interested in the principles behind the website or want to perform deep customization, please read the <a href="https://quarto.org/docs/websites/">official documentation</a>. This chapter provides some targeted explanations; reading it alongside the project directory structure is recommended.</p>
 <section id="how-does-the-automatic-translation-scheme-work" class="level2" data-number="4.1">
 <h2 data-number="4.1" class="anchored" data-anchor-id="how-does-the-automatic-translation-scheme-work"><span class="header-section-number">4.1</span> How Does the Automatic Translation Scheme Work?</h2>
-<p>Traditional bilingual websites often require complex i18n configuration or maintaining two completely separate sets of code. This template implements <strong>automated mirroring</strong> through a Python script (<code>scripts/sync_deepseek.py</code>):</p>
+<p>Traditional bilingual websites often require complex i18n configuration or maintaining two completely independent sets of code. This template implements <strong>automated mirroring</strong> through a Python script (<code>scripts/sync_deepseek.py</code>):</p>
 <ol type="1">
 <li><strong>Mirror Structure</strong>: The <code>.qmd</code> files in <code>content/zh</code> and <code>content/en</code> correspond one-to-one and are automatically translated. <strong>Only <code>.qmd</code> files participate in synchronization</strong>; other files (such as images, PDFs, <code>_metadata.yml</code> configuration files, etc.) are not processed.
 <ul>
@@ -859,43 +877,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>And vice versa.</li>
 </ul></li>
 <li><strong>Script Markers</strong>: Files automatically generated by the script will have an <code>&lt;!-- Auto-generated ... --&gt;</code> marker at the end of their code, which is part of the automated workflow implementation.</li>
-<li><strong>Automatic Translation</strong>: You only need to focus on writing in one language. The content in the other language is automatically generated and filled by AI.</li>
-<li><strong>Independence and Unification</strong>: Although the content is auto-generated, the generated files are independent. If you are dissatisfied with the AI’s translation, you can directly modify the generated file. The script will respect your modifications (unless you delete it).</li>
+<li><strong>Automatic Translation</strong>: You only need to focus on writing in one language; the content in the other language is automatically generated and filled by AI.</li>
+<li><strong>Independence and Unification</strong>: Although the content is auto-generated, the generated files are independent. If you are dissatisfied with the AI’s translation, you can directly modify the generated file, and the script will respect your changes (unless you delete it).</li>
 </ol>
 <p>This design makes website maintenance extremely simple: <strong>Write a bilingual website as if you were writing a single-language blog</strong>.</p>
 <section id="how-does-the-script-know-which-files-need-translation" class="level3" data-number="4.1.1">
 <h3 data-number="4.1.1" class="anchored" data-anchor-id="how-does-the-script-know-which-files-need-translation"><span class="header-section-number">4.1.1</span> How Does the Script Know Which Files Need Translation?</h3>
 <p>You might wonder, how does the script know which file I modified? It determines this through the following logic:</p>
 <ol type="1">
-<li><strong>File Does Not Exist</strong>: If the corresponding file does not exist in <code>content/en</code>, it indicates a new article, <strong>translate it</strong>.</li>
+<li><strong>File Does Not Exist</strong>: If there is no corresponding file in <code>content/en</code>, it means it’s a new article, <strong>translate it</strong>.</li>
 <li><strong>Manual File Protection</strong>: If the target file exists, the script first checks for the <code>&lt;!-- Auto-generated ... --&gt;</code> marker. <strong>No marker</strong> = a manually created/maintained file. The script will <strong>skip it</strong> to prevent overwriting your hard work.</li>
 <li><strong>Hash Verification</strong>: For files with the marker (i.e., those generated by the script), the script calculates the content Hash of the source file and compares it with the Hash recorded in the target file. If they don’t match, it means the source file has been updated, <strong>re-translate it</strong>. If the target file has no Hash record, it will also be <strong>re-translated</strong>.</li>
 </ol>
 </section>
 <section id="warning-how-to-protect-your-modifications" class="level3" data-number="4.1.2">
 <h3 data-number="4.1.2" class="anchored" data-anchor-id="warning-how-to-protect-your-modifications"><span class="header-section-number">4.1.2</span> Warning: How to Protect Your Modifications?</h3>
-<p><strong>Scenario</strong>: You modified the English version (corrected AI errors) and later updated the Chinese version.</p>
+<p><strong>Scenario</strong>: You modified the English version (corrected AI errors), and later updated the Chinese version.</p>
 <ul>
 <li><strong>Case A (Dangerous)</strong>: You only modified the English body text but <strong>kept</strong> the <code>&lt;!-- Auto-generated ... --&gt;</code> marker at the end of the file.
 <ul>
-<li><strong>Result</strong>: When the source file content changes (Hash mismatch), the script will determine an update is needed and <strong>forcefully overwrite</strong> it. Your English modifications will be <strong>lost</strong>!</li>
+<li><strong>Result</strong>: When the source file content changes (Hash mismatch), the script will think it needs updating and <strong>forcefully overwrite</strong> it. Your English modifications will be <strong>lost</strong>!</li>
 </ul></li>
 <li><strong>Case B (Safe)</strong>: When modifying the English body text, you <strong>deleted</strong> the auto-generated marker at the end of the file.
 <ul>
-<li><strong>Result</strong>: The script cannot detect the marker, considers it a “manually maintained file,” and <strong>skips translation</strong>. Your modifications are <strong>preserved</strong>.</li>
+<li><strong>Result</strong>: The script detects no marker, considers this a “manually maintained file”, and <strong>skips translation</strong>. Your modifications are <strong>preserved</strong>.</li>
 </ul></li>
 </ul>
 <blockquote class="blockquote">
-<p><strong>Note</strong>: Once you decide to manually intervene and modify a translated draft, <strong>be sure to delete the auto-generated marker at the end of the file immediately</strong>! The automated translation sync for this document stops here, and you can manually maintain the bilingual version from now on.</p>
+<p><strong>Note</strong>: Once you decide to manually intervene and modify a translation, <strong>be sure to delete the auto-generated marker at the end of the file immediately</strong>! The automated translation sync for this document stops here, and you can manually maintain the bilingual version from now on.</p>
 </blockquote>
 </section>
 </section>
 <section id="how-listing-pages-work" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="how-listing-pages-work"><span class="header-section-number">4.2</span> How Listing Pages Work</h2>
-<p>The list pages for “Blog,” “Notes,” and “Papers” in this template are automatically generated using Quarto’s <strong>Listing</strong> feature. You don’t need to manually maintain article lists; just configure the <code>index.qmd</code> file in the corresponding folder.</p>
+<p>The list pages for “Blog”, “Notes”, and “Papers” on the homepage of this template are all automatically generated using Quarto’s <strong>Listing</strong> feature. You don’t need to manually maintain article lists; you just need to configure the <code>index.qmd</code> file in the corresponding folder.</p>
 <section id="how-to-create-a-new-listing-page" class="level3" data-number="4.2.1">
 <h3 data-number="4.2.1" class="anchored" data-anchor-id="how-to-create-a-new-listing-page"><span class="header-section-number">4.2.1</span> How to Create a New Listing Page?</h3>
-<p>Suppose you want to create a new section called “Projects.” Follow these steps:</p>
+<p>Suppose you want to create a new section called “Projects”. Follow these steps:</p>
 <ol type="1">
 <li><strong>Create a Folder</strong>: Create a new folder named <code>projects</code> under <code>content/zh/</code>.</li>
 <li><strong>Create an Index File</strong>: Create an <code>index.qmd</code> file inside it and write the following configuration:</li>
@@ -904,7 +922,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Projects"</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">listing</span><span class="kw">:</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">contents</span><span class="kw">:</span><span class="at"> </span><span class="st">"*.qmd"</span><span class="co">        # Grabs all .qmd files in the current directory</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span><span class="co">        # Sorts by date descending</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort</span><span class="kw">:</span><span class="at"> </span><span class="st">"date desc"</span><span class="co">        # Sort by date descending</span></span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> default</span><span class="co">            # Display style: default (list), grid (grid), table (table)</span></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">categories</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co">         # Show category tags</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">sort-ui</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co">            # Show sort buttons</span></span>
@@ -914,15 +932,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="at">Here are all my projects.</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="3" type="1">
-<li><strong>Add Content</strong>: Create specific project introduction files (e.g., <code>project-a.qmd</code>) under the <code>projects</code> folder, and they will automatically appear in the list.</li>
+<li><strong>Add Content</strong>: Create specific project introduction files (e.g., <code>project-a.qmd</code>) in the <code>projects</code> folder, and they will automatically appear in the list.</li>
 </ol>
 </section>
 <section id="common-listing-styles-type" class="level3" data-number="4.2.2">
 <h3 data-number="4.2.2" class="anchored" data-anchor-id="common-listing-styles-type"><span class="header-section-number">4.2.2</span> Common Listing Styles (<code>type</code>)</h3>
 <ul>
-<li><strong>default</strong>: The classic blog list view, showing thumbnails, titles, summaries, and metadata. Suitable for blogs.</li>
-<li><strong>grid</strong>: A visually appealing card grid view. Suitable for portfolios or image-heavy content.</li>
-<li><strong>table</strong>: A compact table view. Suitable for displaying large lists of papers or data.</li>
+<li><strong>default</strong>: The classic blog list view, showing thumbnail, title, summary, and metadata. Suitable for blogs.</li>
+<li><strong>grid</strong>: Card grid view, visually appealing. Suitable for showcasing portfolios or image-heavy content.</li>
+<li><strong>table</strong>: Compact table view. Suitable for displaying large lists of papers or data.</li>
 </ul>
 <p>You can change the <code>type</code> field in <code>index.qmd</code> at any time to switch styles.</p>
 </section>
@@ -942,18 +960,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Indentation Indicates Hierarchy</strong>: Just like in Python, indentation is crucial.</li>
 <li><strong>Space After Colon</strong>: <code>key: value</code> is the standard format; a space must follow the colon.</li>
 </ol>
-<p><strong>Special Note: YAML at Document Headers (Front Matter)</strong></p>
-<p>Besides standalone <code>.yml</code> configuration files, you’ll notice that each <code>.qmd</code> document begins with a section wrapped by three dashes <code>---</code>. This is also YAML, called <strong>Front Matter</strong>, specifically used to describe the properties of that article (like title, author, date, tags, etc.). The syntax for both types of YAML is the same. The difference between YAML (.yml) files and Front Matter is that the former are standalone configuration files, while the latter is embedded within the document; the former does not need to be wrapped in <code>---</code>.</p>
+<p><strong>Special Note: YAML at the Document Head (Front Matter)</strong></p>
+<p>Besides standalone <code>.yml</code> configuration files, you’ll notice that the beginning of each <code>.qmd</code> document contains a section wrapped by three dashes <code>---</code>. This is also YAML. It’s called <strong>Front Matter</strong> and is specifically used to describe the properties of that article (like title, author, date, tags, etc.). The syntax for both types of YAML is the same. The difference between a YAML (.yml) file and Front Matter is that the former is a standalone configuration file, while the latter is embedded within the document; the former does not need to be wrapped in <code>---</code>.</p>
 <p>Quarto’s configuration system is very flexible and follows a <strong>“Cascading”</strong> principle. Understanding this is crucial for customizing the website.</p>
-<p>Quarto supports three levels of configuration files, each with different scopes and priorities. They are:</p>
+<p>Quarto supports three levels of configuration files, each with a different scope and priority. They are:</p>
 </section>
 <section id="global-configuration-_quarto.yml" class="level3" data-number="4.3.2">
 <h3 data-number="4.3.2" class="anchored" data-anchor-id="global-configuration-_quarto.yml"><span class="header-section-number">4.3.2</span> 1. Global Configuration (<code>_quarto.yml</code>)</h3>
 <ul>
 <li><strong>Location</strong>: Project root directory.</li>
-<li><strong>Scope</strong>: <strong>The entire website</strong>.</li>
+<li><strong>Scope</strong>: <strong>Entire website</strong>.</li>
 <li><strong>Purpose</strong>: Defines the website’s theme, navigation bar, language, and default settings for all pages.</li>
-<li><strong>Example</strong>: Setting <code>author: "Perry"</code> here makes Perry the default author for all articles across the site.</li>
+<li><strong>Example</strong>: Setting <code>author: "Sam"</code> here makes Sam the default author for all articles across the entire site.</li>
 </ul>
 </section>
 <section id="directory-level-configuration-_metadata.yml" class="level3" data-number="4.3.3">
@@ -976,13 +994,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="priority-rule-proximity-principle" class="level3" data-number="4.3.5">
 <h3 data-number="4.3.5" class="anchored" data-anchor-id="priority-rule-proximity-principle"><span class="header-section-number">4.3.5</span> Priority Rule: Proximity Principle</h3>
-<p>When conflicts arise between configurations at multiple levels, the rule is very simple: <strong>The closer to the document, the higher the priority</strong>.</p>
-<section id="regarding-nested-folders-nested-folders" class="level4" data-number="4.3.5.1">
-<h4 data-number="4.3.5.1" class="anchored" data-anchor-id="regarding-nested-folders-nested-folders"><span class="header-section-number">4.3.5.1</span> Regarding Nested Folders (Nested Folders)</h4>
-<p>If your directory structure has multiple nested levels (e.g., <code>content/zh/notes/math/</code>), each level can have its own <code>_metadata.yml</code>. The configuration follows an <strong>“Inheritance and Override”</strong> mechanism:</p>
+<p>When conflicts arise between configurations at multiple levels, the rule is simple: <strong>the closer to the document, the higher the priority</strong>.</p>
+<section id="about-nested-folders-nested-folders" class="level4" data-number="4.3.5.1">
+<h4 data-number="4.3.5.1" class="anchored" data-anchor-id="about-nested-folders-nested-folders"><span class="header-section-number">4.3.5.1</span> About Nested Folders (Nested Folders)</h4>
+<p>If your directory structure has multiple nested layers (e.g., <code>content/zh/notes/math/</code>), each layer can have its own <code>_metadata.yml</code>. The configuration follows an <strong>“Inheritance and Override”</strong> mechanism:</p>
 <ul>
 <li><strong>Inheritance</strong>: Subfolders automatically inherit configurations from parent folders. For example, documents under <code>math/</code> will automatically apply general settings from <code>notes/_metadata.yml</code>.</li>
-<li><strong>Override</strong>: If a property is redefined in a subfolder, it overrides the same property from the parent folder. For example, you can set <code>toc: false</code> specifically for math notes in <code>math/_metadata.yml</code>.</li>
+<li><strong>Override</strong>: If a property is redefined in a subfolder, it overrides the same property in the parent folder. For example, you can disable the table of contents specifically for math notes in <code>math/_metadata.yml</code>.</li>
 </ul>
 <p><strong>Final Priority Chain (from highest to lowest):</strong> **Document-Level (YAML) &gt; Document’s Folder (_metadata.yml) &gt; Parent Folder (_metadata.yml) &gt; Global (_quarto.yml)**</p>
 </section>
@@ -1004,7 +1022,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><p><strong><code>blog/guest-post.qmd</code> (Document)</strong>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guest Post"</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Guest Contributor"</span><span class="co">  # &lt;--- Overrides global!</span></span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">     # &lt;--- Overrides directory! (Disables TOC for this post)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">     # &lt;--- Overrides directory! (Disable toc for this post)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 <p><strong>Final Result</strong>:</p>
 <ul>
@@ -1016,13 +1034,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="sidebar-configuration-sidebar" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="sidebar-configuration-sidebar"><span class="header-section-number">4.4</span> Sidebar Configuration (Sidebar)</h2>
-<p>The sidebar is the soul of a note-taking website. <a href="https://quarto.org/docs/websites/website-navigation.html">Quarto supports flexible sidebar configuration</a>. You can set up independent sidebars for different sections (e.g., Notes, Blog).</p>
+<p>The sidebar is the soul of a note-taking website. <a href="https://quarto.org/docs/websites/website-navigation.html">Quarto supports flexible sidebar configuration</a>, allowing you to set up independent sidebars for different sections (e.g., Notes, Blog).</p>
 <section id="defining-sidebars-_quarto.yml" class="level3" data-number="4.4.1">
 <h3 data-number="4.4.1" class="anchored" data-anchor-id="defining-sidebars-_quarto.yml"><span class="header-section-number">4.4.1</span> Defining Sidebars (<code>_quarto.yml</code>)</h3>
-<p>In <code>_quarto.yml</code>, you can define multiple sidebars, each with a unique <code>id</code>. You can create multiple <code>sections</code> (groups) under the same sidebar. Pages listed in <code>contents</code> will display the sidebar.</p>
+<p>In <code>_quarto.yml</code>, you can define multiple sidebars, each with a unique <code>id</code>. You can create multiple <code>section</code>s (groups) under the same sidebar. Pages listed in <code>contents</code> will display the sidebar.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sidebar</span><span class="kw">:</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co">  # --- Chinese Notes Sidebar ---</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> </span><span class="st">"notes-zh"</span><span class="co">    # Unique identifier (this template defines separate ones for Chinese and English)</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">id</span><span class="kw">:</span><span class="at"> </span><span class="st">"notes-zh"</span><span class="co">    # Unique identifier (this template defines Chinese and English separately)</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"笔记"</span></span>
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> content/zh/notes/index.qmd</span></span>
@@ -1047,9 +1065,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For example, in <code>content/en/notes/_metadata.yml</code>:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># All articles under this folder use the sidebar with id "notes-en"</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sidebar</span><span class="kw">:</span><span class="at"> notes-en</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This way, when you access any article under <code>content/en/notes/</code>, the <code>notes-en</code> sidebar you defined in <code>_quarto.yml</code> will appear on the left.</p>
+<p>This way, when you access any article under <code>content/en/notes/</code>, the <code>notes-en</code> sidebar you defined in <code>_quarto.yml</code> will be displayed on the left.</p>
 <blockquote class="blockquote">
-<p><strong>The actual situation in this template</strong>: Sidebar contents are listed directly in the <code>contents</code> section of <code>_quarto.yml</code>. Pages listed there will automatically display the corresponding sidebar. Therefore, this template does not create <code>_metadata.yml</code> in every subfolder.</p>
+<p><strong>How this template actually works</strong>: The sidebar contents are listed directly in the <code>contents</code> section of <code>_quarto.yml</code>. Pages listed there will automatically display the corresponding sidebar. Therefore, this template does not create <code>_metadata.yml</code> in every subfolder.</p>
 </blockquote>
 <p>You can also override the default behavior by setting the <code>sidebar</code> field in the YAML Front Matter of an individual page:</p>
 <ul>
@@ -1059,7 +1077,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="auto-fetching-files" class="level3" data-number="4.4.3">
 <h3 data-number="4.4.3" class="anchored" data-anchor-id="auto-fetching-files"><span class="header-section-number">4.4.3</span> Auto-fetching Files</h3>
-<p>When configuring a sidebar, <code>contents</code> supports auto-fetching from a root directory. However, regarding the functionality of “auto-generating a sidebar from a specific subfolder,” I haven’t found a good implementation method yet.</p>
+<p>When configuring a sidebar, <code>contents</code> supports auto-fetching from the root directory. However, I haven’t found a good way to implement features like “auto-generate a sidebar from a specific subfolder”.</p>
 </section>
 </section>
 </section>
@@ -1072,8 +1090,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Why use it?</strong></p>
 <ol type="1">
 <li><strong>Simple and Easy to Learn</strong>: It is based on <strong>Markdown</strong>, a minimalist markup language. You don’t need to adjust formatting like in Word; you can write well-structured articles using simple symbols (e.g., <code>#</code> for headings).</li>
-<li><strong>Powerful</strong>: It natively supports <strong>LaTeX mathematical formulas</strong> (e.g., <code>$E=mc^2$</code>) and <strong>code blocks</strong>, making it very suitable for academic writing and data presentation.</li>
-<li><strong>Automatic Web Conversion</strong>: The text you write is automatically rendered into beautiful HTML web pages.</li>
+<li><strong>Powerful</strong>: It natively supports <strong>LaTeX math formulas</strong> (e.g., <code>$E=mc^2$</code>) and <strong>code blocks</strong>, making it ideal for academic writing and data presentation.</li>
+<li><strong>Automatically Web-Ready</strong>: The text you write is automatically rendered into beautiful HTML web pages.</li>
 </ol>
 <p><strong>Quick Start Markdown Example:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># This is a Level 1 Heading</span></span>
@@ -1087,7 +1105,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="formula-referencing" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="formula-referencing"><span class="header-section-number">5.2</span> Formula Referencing</h2>
-<p>Quarto supports numbering and referencing mathematical formulas, which is very suitable for academic writing.</p>
+<p>Quarto supports numbering and referencing mathematical formulas, which is very useful for academic writing.</p>
 <p><strong>Defining a Numbered Formula:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>$$</span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>E = mc^2</span>
@@ -1101,16 +1119,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="literature-citation" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="literature-citation"><span class="header-section-number">5.3</span> Literature Citation</h2>
-<p>This template is already configured with bibliography management functionality. You only need to:</p>
+<p>This template has already configured the literature citation management function. You only need to:</p>
 <ol type="1">
-<li><p><strong>Add Bibliography Entries</strong>: Add BibTeX-formatted bibliography entries to the <code>references.bib</code> file in the project root directory. For example:</p>
+<li><p><strong>Add Literature Entries</strong>: Add BibTeX format literature entries to the <code>references.bib</code> file in the project root directory. For example:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">Shannon1948</span>,</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">author</span> = {Claude E. Shannon},</span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">title</span> = {A Mathematical Theory of Communication},</span>
 <span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">journal</span> = {Bell System Technical Journal},</span>
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">year</span> = {1948}</span>
 <span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Cite in the Main Text</strong>: Use the <code>@</code> symbol followed by the literature key for citation.</p>
+<li><p><strong>Cite in the Main Text</strong>: Use the <code>@</code> symbol followed by the literature’s key for citation.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb20"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>Information theory was founded by Shannon <span class="co">[</span><span class="ot">@Shannon1948</span><span class="co">]</span>.</span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>As pointed out by @Shannon1948...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1118,7 +1136,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>[@Shannon1948]</code> renders as: (Shannon 1948)</li>
 <li><code>@Shannon1948</code> renders as: Shannon (1948)</li>
 </ul></li>
-<li><p><strong>Bibliography List</strong>: Quarto will <strong>automatically generate a bibliography list at the end of the article</strong>, requiring no additional configuration. If you want to <strong>customize the location of the bibliography</strong> (e.g., place it in the middle of the article or under a specific section), you can add the following at the desired location:</p>
+<li><p><strong>Bibliography List</strong>: Quarto will <strong>automatically generate a bibliography list at the end of the article</strong>, no additional configuration is needed. If you want to <strong>customize the location of the bibliography</strong> (e.g., place it in the middle of the article or under a specific section), you can add the following at the desired location:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb21"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## References</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>::: {#refs}</span>
@@ -1127,16 +1145,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p><strong>Tip</strong>:</p>
 <ul>
-<li>You can use tools like Google Scholar, Zotero, etc., to export BibTeX-formatted bibliography entries and directly paste them into <code>references.bib</code>.</li>
-<li>When typing <code>@</code> in VS Code, the Quarto extension will automatically pop up the list of literature from <code>references.bib</code> for you to choose from.</li>
+<li>You can use tools like Google Scholar, Zotero, etc., to export BibTeX format literature entries and directly paste them into <code>references.bib</code>.</li>
+<li>When typing <code>@</code> in VS Code, the Quarto extension will automatically pop up the literature list from <code>references.bib</code> for you to choose from.</li>
 </ul>
 </blockquote>
 </section>
 <section id="publishing-workflow" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="publishing-workflow"><span class="header-section-number">5.4</span> Publishing Workflow</h2>
-<p>After writing your article, you can publish it in just three steps:</p>
+<p>After writing the article, you can publish it in just three steps:</p>
 <ol type="1">
-<li><p><strong>Create the Article</strong>: Create a new <code>.qmd</code> file in the corresponding subdirectory (e.g., <code>blog/</code>, <code>notes/</code>) under <code>content/zh/</code> or <code>content/en/</code>. Write the content in your preferred language (Chinese or English).</p></li>
+<li><p><strong>Create Article</strong>: Create a new <code>.qmd</code> file in the corresponding subdirectory (e.g., <code>blog/</code>, <code>notes/</code>) under <code>content/zh/</code> or <code>content/en/</code>. Write the content in your preferred language (Chinese or English).</p></li>
 <li><p><strong>Commit Changes</strong>: You can choose either of the following methods.</p>
 <p><strong>Method A: Using VS Code Git (Recommended)</strong></p>
 <p>In the VS Code Source Control panel on the left, enter a commit message, click “Commit”, and then click “Sync Changes”.</p>
@@ -1148,13 +1166,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Commit message"</span></span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Wait for Deployment</strong>: After pushing, GitHub Actions will automatically handle translation, building, and publishing. Refresh the website after a few minutes to see the updates.</p></li>
+<li><p><strong>Wait for Deployment</strong>: After pushing, GitHub Actions will automatically complete translation, building, and publishing. Refresh the website after a few minutes to see the updates.</p></li>
 </ol>
 <section id="local-translation-optional" class="level3" data-number="5.4.1">
 <h3 data-number="5.4.1" class="anchored" data-anchor-id="local-translation-optional"><span class="header-section-number">5.4.1</span> Local Translation (Optional)</h3>
 <p>If you wish to preview the translation results locally instead of waiting for automatic cloud translation, you can follow the steps below.</p>
 <blockquote class="blockquote">
-<p>The following commands should be run in the VS Code terminal (Terminal -&gt; New Terminal), ensuring the current directory is the project root.</p>
+<p>The following commands are all run in the VS Code terminal (Terminal -&gt; New Terminal). Ensure the current directory is the project root.</p>
 </blockquote>
 <p><strong>Step 1: Install Dependencies</strong> (Only needs to be done once)</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install <span class="at">-r</span> requirements.txt</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -1184,7 +1202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Build Website</strong>: Runs <code>quarto render</code> to generate static web pages.</li>
 <li><strong>Publish Online</strong>: Pushes the web pages to the <code>gh-pages</code> branch. Your website will update within a few minutes.</li>
 </ol>
-<p>You can view the real-time logs of the entire process on the <strong>Actions</strong> tab of your GitHub repository.</p>
+<p>You can view the real-time logs of the entire process in the <strong>Actions</strong> tab of your GitHub repository.</p>
 </section>
 <section id="local-preview" class="level2" data-number="5.6">
 <h2 data-number="5.6" class="anchored" data-anchor-id="local-preview"><span class="header-section-number">5.6</span> Local Preview</h2>
@@ -1196,22 +1214,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="faq" class="level1" data-number="6">
 <h1 data-number="6"><span class="header-section-number">6</span> FAQ</h1>
 <blockquote class="blockquote">
-<p><strong>General Troubleshooting Method</strong>: When encountering deployment issues, the first step is to check the run logs on the <strong>Actions</strong> tab of your GitHub repository. Click on the most recent run record; a red cross indicates failure. Click into it to see specific error messages. If you encounter an error you don’t understand, you can copy the error message and ask an AI to help you analyze it.</p>
+<p><strong>General Troubleshooting Method</strong>: When encountering deployment issues, the first step is to check the run logs in the <strong>Actions</strong> tab of your GitHub repository. Click on the most recent run record; a red cross indicates failure. Click into it to see specific error messages. If you encounter an error you don’t understand, you can copy the error message and ask an AI to help you analyze it.</p>
 </blockquote>
-<section id="why-isnt-my-translation-taking-effect" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="why-isnt-my-translation-taking-effect"><span class="header-section-number">6.1</span> Why isn’t my translation taking effect?</h2>
+<section id="why-isnt-my-translation-working" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="why-isnt-my-translation-working"><span class="header-section-number">6.1</span> Why isn’t my translation working?</h2>
 <ol type="1">
 <li>Check the <strong>GitHub Actions</strong> logs: On your repository page, click “Actions” and view the details of the most recent run.</li>
 <li>Check the <strong>API Key</strong>: Ensure you have correctly configured <code>DEEPSEEK_API_KEY</code> in Secrets and that the key still has a balance.</li>
-<li><strong>Local Debugging</strong>: If you are running the script locally and the translation is not taking effect, make sure the environment variable is set.</li>
+<li><strong>Local Debugging</strong>: If you are running the script locally and the translation is not working, ensure the environment variable is set.</li>
 </ol>
 </section>
 <section id="getting-a-404-error-after-deployment" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="getting-a-404-error-after-deployment"><span class="header-section-number">6.2</span> Getting a 404 error after deployment?</h2>
 <p>Please check the settings in <strong>Settings -&gt; Pages</strong>. Ensure the Source branch is set to <code>gh-pages</code>, not <code>main</code>.</p>
 </section>
-<section id="i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature.-what-should-i-do" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature.-what-should-i-do"><span class="header-section-number">6.3</span> I only want to use a single language (e.g., only Chinese) and don’t want the bilingual feature. What should I do?</h2>
+<section id="what-if-i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="what-if-i-only-want-to-use-a-single-language-e.g.-only-chinese-and-dont-want-the-bilingual-feature"><span class="header-section-number">6.3</span> What if I only want to use a single language (e.g., only Chinese) and don’t want the bilingual feature?</h2>
 <p>This template is designed flexibly and can be switched to single-language mode.</p>
 <p><strong>Steps:</strong></p>
 <ol type="1">
@@ -1223,11 +1241,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>Clean up unnecessary files</strong>:
 <ul>
 <li>Delete the language folder you don’t need (e.g., <code>content/en</code>).</li>
-<li>Also check <code>_quarto.yml</code> and remove all links pointing to that folder (e.g., paths like <code>content/en/...</code> in the navbar or sidebar).</li>
+<li>Also check <code>_quarto.yml</code> and remove all links pointing to that folder (e.g., paths like <code>content/en/...</code> in the navigation bar or sidebar).</li>
 </ul></li>
 <li><strong>Remove the language switcher</strong>:
 <ul>
-<li>Open <code>_quarto.yml</code>, find the <code>include-after-body</code> section, and delete the line <code>assets/html/include_lang_switch.html</code>.</li>
+<li>Open <code>_quarto.yml</code>, find the <code>include-after-body</code> section, and delete the line containing <code>assets/html/include_lang_switch.html</code>.</li>
 <li>In the <code>navbar</code> settings, delete the navigation item related to <code>icon: translate</code>.</li>
 </ul></li>
 <li><strong>Verify the configuration</strong>:
@@ -1236,17 +1254,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>After pushing, check if the GitHub Actions run is successful.</li>
 </ul></li>
 </ol>
-<p>Your website will then become a single-language site.</p>
+<p>Your website will then be a single-language site.</p>
 </section>
 </section>
-<section id="additional-tool-automatically-convert-latex-to-quarto-markdown" class="level1" data-number="7">
-<h1 data-number="7"><span class="header-section-number">7</span> Additional Tool: Automatically Convert LaTeX to Quarto Markdown</h1>
-<p>If you already have a large number of LaTeX (.tex) documents, this project also provides an automatic conversion script that can batch convert <code>.tex</code> files to Quarto Markdown (<code>.qmd</code>) format, facilitating migration and publishing.</p>
+<section id="additional-tool-automatic-latex-to-quarto-markdown-conversion" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> Additional Tool: Automatic LaTeX to Quarto Markdown Conversion</h1>
+<p>If you already have a large number of LaTeX (.tex) documents, this project also provides an automatic conversion script that can batch convert <code>.tex</code> files into Quarto Markdown (<code>.qmd</code>) format, facilitating migration and publishing.</p>
 <p>You can view detailed usage instructions and examples in <code>scripts/README.md</code>. You are welcome to refer to and use this tool to improve content migration efficiency. Please note that this script is still being continuously improved, so it is recommended to test it on a small scale first.</p>
 <hr>
 <p>We hope this template helps you build an outstanding personal homepage! If you have any questions, feel free to leave a comment below or create an Issue on GitHub.</p>
 <!-- Auto-generated by DeepSeek. DO NOT EDIT. -->
-<!-- Source Hash: 128ce4edc7efd598465229dd5f5071c8 -->
+<!-- Source Hash: 3527bd00545a28cdbf0378dd9694a8bb -->
 
 
 </section>
